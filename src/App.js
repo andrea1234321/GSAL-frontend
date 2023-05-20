@@ -4,6 +4,7 @@ import {Route, Routes } from "react-router-dom"
 import Home from "./routes/Home"
 import AdminProfiles from "./routes/AdminProfiles"
 import Footer from "./components/Footer"
+import Navbar from './components/Navbar1'
 import NewForm from "./components/NewForm"
 import AboutUs from './routes/AboutUs'
 import PublicProfiles from "./routes/PublicProfiles"
@@ -68,6 +69,7 @@ componentDidMount(){
   return (
     <div className="App">
         <>
+      <Navbar />
       <Routes>
        <Route exact path="/" index element={<Home/>}/>
        <Route path="/about" element={<AboutUs/>}/> 
