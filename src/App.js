@@ -10,6 +10,7 @@ import PublicProfiles from "./routes/PublicProfiles"
 import ViewSingleProfile from "./routes/ViewSingleProfile"
 import EditForm from "./routes/EditForm"
 import { LoginPage } from './routes/Login'
+import WhatWeDo from './components/WhatWeDo'
 
 // let baseURL = ""
 // if (process.env.NODE_ENV === 'development') {
@@ -79,6 +80,7 @@ componentDidMount(){
        <Route path="/login" element={<LoginPage />} />
      
       </Routes>
+      <WhatWeDo></WhatWeDo>
       <Footer/>
      </>
     </div>

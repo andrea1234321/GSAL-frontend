@@ -1,0 +1,95 @@
+.rows {
+    flex-shrink: 0;
+    width: 294px;
+    height: min-content; /* 365px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    justify-self: start;
+    align-self: start;
+    padding: 0px 0px 0px 0px;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    border-radius: 0px 0px 0px 0px;
+  }
+  .content {
+    flex-shrink: 0;
+    width: 200px;
+    height: min-content; /* 130px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 0px;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 10;
+    border-radius: 0px 0px 0px 0px;
+  }
+  
+  .what-we-do-item-description{
+    flex-shrink: 0;
+    width: 100px;
+    height: auto; /* 84px */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow: visible;
+    flex: 1 0 0px;
+    position: relative;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+    color: var(--Black, #1f1e1e);
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    line-height: 1.4;
+    text-align: left;
+  }
+  
+  .heading {
+    flex-shrink: 0;
+    width: 100px;
+    height: auto; /* 36px */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow: visible;
+    flex: 1 0 0px;
+    position: relative;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+    color: #333333;
+    font-size: 24px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .what-we-do-item-image {
+    flex-shrink: 0;
+  width: 200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex: 1 0 0px;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 20;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  }
