@@ -2,6 +2,7 @@ import React from 'react';
 import "./HeroStyles.css"
 import {Row, Col} from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
+import { Button } from 'react-bootstrap';
 import hero1img from "../assets/hero1img.jpeg"
 
 const Hero = () => {
@@ -13,15 +14,16 @@ const Hero = () => {
         <Col md={6} className='order-md-1 order-2'>
             {/* content for the left column */}
             <div className='l-hero-div'>
-            <p className="be-someones-hero">Be Someone's Hero</p>
-            <p className="learn-how">Learn how you can become a <br/> kidney donor</p>
-            <div>
-             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXWz_LOPWMUUyTefH3-3R2u4myBsZyhB9EuPY-UW_kdQVWVw/viewform" target="_blank" rel="noreferrer">
-             <button className="become-a-donor-btn">
-             Become A Donor
-              </button>
-             </a>
-         </div>
+                
+                <p className="be-someones-hero">Be Someone's Hero</p>
+                <p className="learn-how">Learn how you can become a <br/> kidney donor</p>
+                <div>
+             
+                <Button className='become-donor-btn' href='https://docs.google.com/forms/d/e/1FAIpQLSdXWz_LOPWMUUyTefH3-3R2u4myBsZyhB9EuPY-UW_kdQVWVw/viewform' target='_blank' rel='noreferrer'> 
+                Become A Donor
+                </Button>
+                </div>
+                
         </div>
         </Col>
         <Col md={6} className='order-md-2 order-1'>
