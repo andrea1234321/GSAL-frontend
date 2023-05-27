@@ -1,7 +1,8 @@
 .rows {
     flex-shrink: 0;
-    width: 294px;
-    height: min-content; /* 365px */
+    /* width: 294px; */
+    width: 100%;
+    height: min-content; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,11 +19,12 @@
   }
   .content {
     flex-shrink: 0;
-    width: 200px;
-    height: min-content; /* 130px */
+    width: 100%;
+    height: min-content; 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
     align-items: flex-start;
     flex: 1 0 0px;
     position: relative;
@@ -35,8 +37,8 @@
   
   .what-we-do-item-description{
     flex-shrink: 0;
-    width: 100px;
-    height: auto; /* 84px */
+    width: 200px;
+    height: auto;   
     white-space: pre-wrap;
     word-wrap: break-word;
     word-break: break-word;
@@ -55,8 +57,7 @@
   
   .heading {
     flex-shrink: 0;
-    width: 100px;
-    height: auto; /* 36px */
+    height: auto; 
     white-space: pre-wrap;
     word-wrap: break-word;
     word-break: break-word;
@@ -73,7 +74,7 @@
     text-align: left;
   }
   .what-we-do-item-image {
-    flex-shrink: 0;
+ flex-shrink: 0;
   width: 200px;
   height: 250px;
   display: flex;

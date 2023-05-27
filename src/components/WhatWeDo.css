@@ -1,5 +1,4 @@
 .grid {
-  width: 1px;
     height: min-content;
     display: grid;
     max-width: 1000px;
@@ -11,7 +10,7 @@
     grid-auto-rows: min-content;
     grid-template-rows: repeat(2, min-content);
     padding: 0px 0px 0px 0px;
-    column-gap: 60px;
+    column-gap: 40px;
 
   }
 
