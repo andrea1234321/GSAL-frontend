@@ -79,7 +79,6 @@ componentDidMount(){
        <Route path="/profiles/:id" element={<ViewSingleProfile  profiles={this.state.profiles}   />}/>
        <Route path="/profiles/:id/edit" element={<EditForm  profiles={this.state.profiles}   />}/>
        <Route path="/login" element={<LoginPage />} />
-     
       </Routes>
       <Footer/>
      </>
