@@ -1,42 +1,38 @@
-import "./FooterStyles.css"
-
-import React from 'react'
-
-import {FaPhone, FaMailBulk, FaFacebook, FaInstagramSquare, FaYoutube} from "react-icons/fa"
-
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Footer = () => {
   return (
-    <div className="footer">
-        <div className="footer-container">
-            
-            {/* <h3>LET'S CONNECT</h3> */}
-                <div className="phone">
-                    <h4><FaPhone size={20} style={{color: "#fff" , marginRight: "1px"}} />
-                    720-492-4814
-                     </h4>
-                </div>
-                <div className="email"> <h4><FaMailBulk size={20} style={{color: "#fff" , marginRight: "1px"}} />Gosavealifedonate@gmail.com
-                </h4>
-                </div>
-            
-                <div className="social">
-                <a href="https://www.facebook.com/GoSaveALife">
-                    <FaFacebook size={30} style={{color: "#000000" , marginRight: "1rem"}} />
-                </a>
-                <a href="https://www.instagram.com/gosavealifedonate/">
-                    <FaInstagramSquare size={30} style={{color: "#000000" , marginRight: "1rem"}} />
-                </a>
-                <a href="https://www.youtube.com/channel/UC8OSKc2CRW8FSA0ChXwDLoQ">
-                    <FaYoutube size={30} style={{color: "#000000" , marginRight: "1rem"}} />
-                </a>
-                </div>
-            
-            
+    <footer className="footer" style={{ backgroundColor: 'white', marginTop: 'auto' }}>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="row">
+              <div className="col-md-6">
+                {/* Left column content */}
+              </div>
+              <div className="col-md-6">
+                {/* Right column content */}
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 text-md-right">
+            <p className="text-muted">
+              <span className="copyright">
+                &copy; 2023 Your Company. All rights reserved.
+              </span>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="instagram_logo.png" alt="Instagram" className="social-media-icon" />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="twitter_logo.png" alt="Twitter" className="social-media-icon" />
+              </a>
+            </p>
+          </div>
         </div>
-                <h6 className="developed-by">Application development by <a href ="https://www.linkedin.com/in/amanda-frisk-dev" className="Amanda">Amanda Frisk</a></h6>
-    </div>
-  )
-}
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
