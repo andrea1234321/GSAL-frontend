@@ -3,7 +3,7 @@ import React from 'react'
 // import Navbar1 from '../components/Navbar1'
 
 import Hero from '../components/Hero'
-// import Testimonial from '../components/Testimonial'
+import Testimonial from '../components/Testimonial'
 import WhatWeDo from '../components/WhatWeDo'
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
     <>
     {/* <Navbar1/> */}
     <Hero/>
-     {/* <Testimonial/> */}
+     <Testimonial/>
      <WhatWeDo></WhatWeDo>
   </>
   )
