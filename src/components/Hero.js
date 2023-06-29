@@ -2,8 +2,9 @@ import React from 'react';
 import "./HeroStyles.css"
 import {Row, Col} from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
-import { Button } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap';
 import hero1img from "../assets/hero1img.jpeg"
+import BecomeDonorBtn from '../components/BecomeDonorBtn'
 
 const Hero = () => {
     
@@ -17,12 +18,13 @@ const Hero = () => {
                 
                 <p className="be-someones-hero">Be Someone's Hero</p>
                 <p className="learn-how">Learn how you can become a <br/> kidney donor</p>
-                <div>
+              <BecomeDonorBtn/>
+                {/* <div>
              
-                <Button className='become-donor-btn' href='https://docs.google.com/forms/d/e/1FAIpQLSdXWz_LOPWMUUyTefH3-3R2u4myBsZyhB9EuPY-UW_kdQVWVw/viewform' target='_blank' rel='noreferrer'> 
+                <Button className='become-donor-btn' href='https://docs.google.com/forms/d/e/1FAIpQLSdXWz_LOPWMUUyTefH3-3R2u4myBsZyhB9EuPY-UW_kdQVWVw/viewform' target='_blank' rel='noreferrer' > 
                 Become A Donor
                 </Button>
-                </div>
+                </div> */}
                 
         </div>
         </Col>
