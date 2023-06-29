@@ -11,6 +11,7 @@ import PublicProfiles from "./routes/PublicProfiles"
 import ViewSingleProfile from "./routes/ViewSingleProfile"
 import EditForm from "./routes/EditForm"
 import { LoginPage } from './routes/Login'
+import ContactFormPg from './routes/ContactFormPg'
 
 
 // let baseURL = ""
@@ -74,6 +75,8 @@ componentDidMount(){
       <Routes>
        <Route exact path="/" index element={<Home/>}/>
        <Route path="/about" element={<AboutUs/>}/> 
+       <Route path="/contact" element={<ContactFormPg/>}/> 
+
        <Route path="/admin-profiles" element={<AdminProfiles profiles={this.state.profiles}/>}/>
        <Route path="/create" element={<NewForm handleAddProfile={this.handleAddProfile}/>}/>
        <Route path="/public-profiles" element={<PublicProfiles profiles={this.state.profiles}/>}/>
