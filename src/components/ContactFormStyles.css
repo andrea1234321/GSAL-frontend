@@ -1,0 +1,44 @@
+.contact-form-container{
+  margin: 0 auto;
+  width: 600px;
+  padding: 50px;
+}
+.contact-title{
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 40px;
+  font-size: 50px;
+}
+.contact-info{
+  color: black;
+  font-weight: 200;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+}
+.contact-name, .contact-email, .contact-message{
+  background-color: rgb(244, 244, 244);
+  border: none;
+  border-radius: 8px;
+  padding:12px;
+  margin-bottom: 10px;
+}
+.contact-message{
+  margin-top: 0;
+}
+::placeholder{
+  color: rgb(123, 123, 123);
+  font-weight: 600;
+  font-size: 16px;
+}
+.contact-submit{
+  background-color: rgb(155, 33, 33);
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  color: rgb(237, 237, 237);
+  font-weight: 600;
+}
