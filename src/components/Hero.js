@@ -11,7 +11,7 @@ const Hero = () => {
         
         <Container fluid className='hero-container'>
     <Row>
-        <Col md={6} className='order-md-1 order-2'>
+        <Col md={6}  className='l-hero order-md-1 order-2'>
             <div className='l-hero-div'>
                 
                 <p className="be-someones-hero">Be Someone's Hero</p>
@@ -21,7 +21,7 @@ const Hero = () => {
                 
         </div>
         </Col>
-        <Col md={6} className='order-md-2 order-1'>
+        <Col md={6}  className='r-hero order-md-2 order-1'>
       <img className="hero-1-img"
       src={hero1img} alt="intro" /> 
   
