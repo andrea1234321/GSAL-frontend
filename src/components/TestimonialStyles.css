@@ -1,10 +1,10 @@
 .testimonial-container{
     background-color:  #A41E1E;
-    min-height: 150px;
+    min-height: 350px;
     margin-top: 29px;
     padding-top: 100px;
     padding-bottom: 100px;
-   
+   width: 100%;
 
 }
 
@@ -17,7 +17,7 @@ p{
   font-weight: 500;
   font-style: normal;
   font-family: "Inter", sans-serif; 
-  width: fit-content;
+  
 }
 h2{
   font-size: 20px;
@@ -39,13 +39,44 @@ padding-left: 45px
 
 .avatar {
     flex-shrink: 0;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: block;
     overflow: hidden;
     position: relative;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    margin-left: -30px;
-    margin-top: -65px;
+    margin-left: -50px;
+    margin-top: -55px;
   }
+
+/* Laptop Styling */
+  @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    .testimonial-content-div{
+      width: 850px;
+      margin-left: -177px;
+     } 
+      
+     }
+
+    
+  /* Mobile L-S Styling -ok */
+  @media screen and (min-width: 320px) and (max-width: 425px){
+    
+    .avatar{
+   margin-top: 1px;
+   margin-left:10px;
+    }      
+ 
+  }
+
+/* only tablet styling -okay */
+  @media only screen and (width: 768px){
+    
+   .testimonial-content-div{
+   width: 600px;
+   margin-left: -177px;
+  }
+
+}
