@@ -12,6 +12,7 @@ import ViewSingleProfile from "./routes/ViewSingleProfile"
 import EditForm from "./routes/EditForm"
 import { LoginPage } from './routes/Login'
 import ContactFormPg from './routes/ContactFormPg'
+import Team from './routes/Team'
 
 
 // let baseURL = ""
@@ -76,6 +77,7 @@ componentDidMount(){
        <Route exact path="/" index element={<Home/>}/>
        <Route path="/about" element={<AboutUs/>}/> 
        <Route path="/contact" element={<ContactFormPg/>}/> 
+       <Route path="/team" element={<Team/>}/> 
 
        <Route path="/admin-profiles" element={<AdminProfiles profiles={this.state.profiles}/>}/>
        <Route path="/create" element={<NewForm handleAddProfile={this.handleAddProfile}/>}/>
