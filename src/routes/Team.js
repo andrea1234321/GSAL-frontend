@@ -51,13 +51,26 @@ const Team = () => {
   ]
   
   const updateItem= (newItem) => {
-    if (newItem<0){
-      newItem=0;
-    }else if (newItem >= (items.length)){
-      newItem= items.length -1
+    if (windowSize> breakpoiintTwo){
+      if (newItem<0){
+        newItem=0;
+      }else if (newItem >= 4){
+        newItem= 4
+      }
+    }else if (windowSize>breakpoiintOne){
+      if (newItem<0){
+        newItem=0;
+      }else if (newItem >= 5){
+        newItem= 5
+      }
+    }else{
+      if (newItem<0){
+        newItem=0;
+      }else if (newItem >= (items.length)){
+        newItem= items.length -1
+      }
     }
     setActiveItem(newItem)
-    console.log(activeItem)
   }
   
   const updateWindow= () => {
