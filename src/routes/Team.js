@@ -100,6 +100,9 @@ const Team = () => {
         </div>
       </div>
       <div className="carousel">
+        <div className="arrows">
+          <button onClick={()=> (updateItem(activeItem-1))}>&lt;</button>
+        </div>
         <div className="devs" style={{ transform: `translate: (-${activeItem * 100}%)`}}>
           {items.map((item, idx)=> {
             if (windowSize>breakpoiintTwo){
@@ -118,8 +121,6 @@ const Team = () => {
           )}
         </div>
         <div className="arrows">
-          <button onClick={()=> (updateItem(activeItem-1))}>&lt;</button>
-          <div className="indicators">...</div>
           <button onClick={()=> (updateItem(activeItem+1))}>&gt;</button>
         </div>
       </div>
